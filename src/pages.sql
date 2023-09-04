@@ -10,12 +10,12 @@ CREATE TABLE pages.pages
 );
 
 insert into pages.pages(page_id, title, content, parent_id)
-values (1, 'a', 'a', null),
-       (2, 'b', 'b', 1),
-       (3, 'c', 'c', 2),
-       (4, 'd', 'd', 3),
-       (5, 'e', 'e', 4),
-       (6, 'f', 'f', 4);
+values (1, 'page-a', 'content-a', null),
+       (2, 'page-b', 'content-b', 1),
+       (3, 'page-c', 'content-c', 2),
+       (4, 'page-d', 'content-d', 3),
+       (5, 'page-e', 'content-e', 4),
+       (6, 'page-f', 'content-f', 4);
 
 WITH RECURSIVE hierarchy_pages (page_id, title, content, parent_id)
 AS
